@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+.nav-items:hover{
+    cursor: pointer;
+}
+.nav-items{
+    margin-top: 30px;
+    
+    margin-bottom: 60px;
+}
+.nav-main{
+    background-color : #0e2353;
+    margin-left: -1rem;
+}
+@font-face {
+    font-family: 'KreganDEMO-Regular';
+    src: url('../public/fonts/Kregan/ DEMO.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -43,7 +43,7 @@ export const BoxesCore = ({
                                 transition: { duration: 0 },
                             }}
                             animate={{
-                                transition: { duration: 2 },
+                                transition: { duration: 5 },
                             }}
                             key={`col` + j}
                             className="relative h-8 w-16 border-t border-r border-slate-700">
@@ -52,7 +52,7 @@ export const BoxesCore = ({
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
-                                    strokeWidth="1.5"
+                                    strokeWidth="3"
                                     stroke="currentColor"
                                     className="pointer-events-none absolute -top-[14px] -left-[22px] h-6 w-10 stroke-[1px] text-slate-700">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />

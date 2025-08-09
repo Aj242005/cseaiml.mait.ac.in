@@ -13,7 +13,7 @@ function App() {
   return (<>
     <div className="overflow-hidden main" >
       <div className="shadow-xl shadow-cyan-500/50" >
-        <Navbar className='' />
+        <Navbar className=' z-[2] ' />
 
       </div>
       <div className=" overflow-hidden relative h-full w-screen  " >

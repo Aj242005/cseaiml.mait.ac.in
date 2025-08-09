@@ -30,8 +30,8 @@ export function Home({ className }) {
     return (
         <>
             {/* ====== TOP HERO SECTION (No changes here) ====== */}
-            <div className={className} >
-                <Boxes className='h-screen w-screen relative' />
+            <div className={className + 'relative h-screen w-full bg-[url(https://ik.imagekit.io/evkfzbhzw/mait.jpg?updatedAt=1754766013055)] object-cover opacity-65 ' } >
+
             </div>
             <div className="absolute w-screen text-center top-[17%] font-mono left-[50%] -translate-x-1/2 -translate-y-1/2 text-8xl font-stretch-expanded whitespace-nowrap leading-[0.9]">
                 <h1 className="tracking-tight bg-gradient-to-r from-purple-400 via-orange-400 to-yellow-300 bg-clip-text text-transparent">

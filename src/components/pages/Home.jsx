@@ -83,14 +83,14 @@ export function Home({ className }) {
         <>
             {/* Hero Section */}
             <div className={className + "relative h-screen md:h-170 w-full hero-bg-card "} >
-                <div className={'absolute h-[60vh] md:h-150 w-[90%] md:w-320 rounded-4xl top-[67%] left-[50%] -translate-x-1/2 -translate-y-1/2 bg-[url(https://ik.imagekit.io/evkfzbhzw/ai.jpg?updatedAt=1754772597181)] object-cover opacity-35 hero-bg '} >
+                <div className={'absolute h-[60vh] md:h-150 w-[90%] md:w-320 rounded-4xl top-[64%] left-[50%] -translate-x-1/2 -translate-y-1/2 bg-[url(https://ik.imagekit.io/evkfzbhzw/ai.jpg?updatedAt=1754772597181)] object-cover opacity-35 hero-bg '} >
                 </div>
                 <div className="hero-blob" >
                 </div>
             </div>
 
             {/* Hero Text */}
-            <div className="absolute w-screen text-center top-[62%] font-mono left-[50%] -translate-x-1/2 -translate-y-1/2 text-3xl md:text-6xl lg:text-8xl font-stretch-expanded whitespace-nowrap scale-[0.6] md:scale-[0.8] leading-[0.9] px-4">
+            <div className="absolute w-screen text-center top-[59%] font-mono left-[50%] -translate-x-1/2 -translate-y-1/2 text-3xl md:text-6xl lg:text-8xl font-stretch-expanded whitespace-nowrap scale-[0.6] md:scale-[0.8] leading-[0.9] px-4">
                 <h1 className="tracking-tight text-[#00B4D8] text-extrabold">
                     Department of
                 </h1>

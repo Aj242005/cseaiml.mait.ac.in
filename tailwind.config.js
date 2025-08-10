@@ -8,7 +8,8 @@ export default {
         extend: {
             animation: {
                 "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
-                'border-spin': 'border-spin 4s linear infinite'
+                'border-spin': 'border-spin 4s linear infinite',
+                'hue-rotate-slow': 'hue-rotate 5s linear infinite'
             },
             keyframes: {
                 'border-spin': { // Defines the animation steps
@@ -23,6 +24,11 @@ export default {
                         transform: "translateZ(0) rotate(360deg)",
                     },
                 },
+                'hue-rotate': {
+                    '0%': { filter: 'hue-rotate(0deg)' },
+                    '100%': { filter: 'hue-rotate(360deg)' 
+                    },
+                }
             },
         },
     },

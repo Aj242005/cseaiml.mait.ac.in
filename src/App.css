@@ -281,7 +281,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 }
 
 .card__content {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.4;
   color: #000;
   margin-bottom: 20px;
@@ -327,7 +327,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 }
 
 .card__button::before {
-  content: "Sure?";
+  content: "Ready?";
   position: absolute;
   top: 0;
   left: 0;
@@ -371,3 +371,4 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 .glitch {
   animation: glitch 0.3s infinite;
 }
+

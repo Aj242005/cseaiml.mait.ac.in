@@ -52,12 +52,12 @@ export function Home({ className }) {
 
             {/* ====== SCROLLABLE SECTION WITH ANIMATION ====== */}
             <div className="h-screen w-full flex" >
-                <div className=" absolute h-161 w-[95%] top-[5%] left-[50%] -translate-x-1/2 rounded-xl flex newsletter-card shadow-amber-400 inset-shadow-sm shadow-2xl" >
+                <div className=" absolute h-161 w-[90%] top-[5%] left-[50%] -translate-x-1/2 rounded-xl flex newsletter-card shadow-amber-400 inset-shadow-sm shadow-xl" >
                     <div className="absolute h-158.5 w-[55%] z-[2] right-[43%]" >
                         <div class=" absolute top-[30%] scale-[1.5] left-[27.5%] card">
                             <span class="card__title">Newsletter</span>
                             <p class="card__content">
-                                Explore the latest advancements in AI and Machine Learning, featuring
+                                Explore the latest advancements in AI and Machine Learning, featuring student projects, faculty research, and industry insights in our newest edition
                             </p>
                             <form class="card__form">
                                 <button class="card__button">Read Now</button>
@@ -65,20 +65,9 @@ export function Home({ className }) {
                         </div>
                     </div>
 
-                    <div className=" absolute h-158.5 w-[40%] z-[2] bg-amber-50 left-[55%] rounded-3xl" >
-                        <CardContainer className=" absolute top-[1%] inter-var">
+                    <div className=" absolute h-161 w-[44.5%] z-[2] bg-amber-50 left-[54.7%] rounded-[20px]" >
+                        <CardContainer className=" absolute top-[8%] left-[12%] inter-var">
                             <CardBody className="  relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] w-auto sm:w-[30rem] h-150 rounded-xl p-6">
-                                <CardItem
-                                    translateZ="50"
-                                    className="text-xl font-bold text-neutral-600 dark:text-white"
-                                >
-                                </CardItem>
-                                <CardItem
-                                    as="p"
-                                    translateZ="60"
-                                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-                                >
-                                </CardItem>
                                 <CardItem translateZ="100" className="w-full mt-4">
                                     <a href="https://www.mait.ac.in" className="cursor-pointer " target="_blank" >
                                         <img
@@ -94,6 +83,11 @@ export function Home({ className }) {
                         </CardContainer>
                     </div>
                 </div>
+            </div>
+            <div className="h-screen w-full" >
+                <h1 className="text-6xl font-mono font-semibold bg-gradient-to-r from-[#ff218c] via-[#ffd800]    to-[#21b1ff] object-contain text-transparent bg-clip-text absolute " >
+                    Upcoming Events
+                </h1>
             </div>
         </>
     );

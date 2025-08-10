@@ -8,8 +8,13 @@ export default {
         extend: {
             animation: {
                 "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+                'border-spin': 'border-spin 4s linear infinite'
             },
             keyframes: {
+                'border-spin': { // Defines the animation steps
+                    '0%': { '--tw-gradient-from-position': '0deg' },
+                    '100%': { '--tw-gradient-from-position': '360deg' }
+                },
                 "spin-around": {
                     "0%": {
                         transform: "translateZ(0) rotate(0)",
@@ -21,5 +26,5 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: []
 };

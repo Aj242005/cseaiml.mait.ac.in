@@ -17,7 +17,7 @@ function App() {
 
       </div>
       <div className=" overflow-hidden relative h-full w-screen  " >
-        <Home className=' relative bg-gradient-to-r from-blue-500 via-indigo-500 to-sky-800' />
+        <Home className='' />
       </div>
     </div>
   </>

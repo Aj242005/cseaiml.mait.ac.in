@@ -80,34 +80,34 @@ export function Home({ className }) {
     const isInView = useInView(animationRef, { once: true, amount: 0.25 });
 
     return (
-        <>
+        <div className="w-full">
             {/* Hero Section */}
-            <div className={className + "relative h-screen md:h-170 w-full hero-bg-card "} >
-                <div className={'absolute h-[60vh] md:h-150 w-[90%] md:w-320 rounded-4xl top-[64%] left-[50%] -translate-x-1/2 -translate-y-1/2 bg-[url(https://ik.imagekit.io/evkfzbhzw/ai.jpg?updatedAt=1754772597181)] object-cover opacity-35 hero-bg '} >
+            <section className="relative h-screen w-full hero-bg-card overflow-hidden">
+                <div className="absolute h-[60vh] md:h-150 w-[90%] md:w-320 rounded-4xl top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 bg-[url(https://ik.imagekit.io/evkfzbhzw/ai.jpg?updatedAt=1754772597181)] object-cover opacity-35 hero-bg">
                 </div>
-                <div className="hero-blob" >
+                <div className="hero-blob">
                 </div>
-            </div>
 
-            {/* Hero Text */}
-            <div className="absolute w-screen text-center top-[59%] font-mono left-[50%] -translate-x-1/2 -translate-y-1/2 text-3xl md:text-6xl lg:text-8xl font-stretch-expanded whitespace-nowrap scale-[0.6] md:scale-[0.8] leading-[0.9] px-4">
-                <h1 className="tracking-tight text-[#00B4D8] text-extrabold">
-                    Department of
-                </h1>
-                <h1 className="bg-gradient-to-r from-[#FF6FD8] via-[#6A11CB] to-[#00C9A7] text-transparent bg-clip-text flex text-4xl md:text-6xl lg:text-8xl flex-col font-thin font-sans items-center justify-center tracking-wider">
-                    <TypewriterEffectSmooth words={words} className={'text-2xl md:text-4xl lg:text-6xl font-extrabold scale-[1.1]'} />
-                </h1>
-                <h1 className="text-2xl md:text-3xl lg:text-5xl tracking-tighter">
-                    Maharaja Agrasen Institute of Technology, Delhi
-                </h1>
-            </div>
+                {/* Hero Text */}
+                <div className="absolute w-screen text-center top-[44%] font-mono left-[50%] -translate-x-1/2 -translate-y-1/2 text-3xl md:text-6xl lg:text-8xl font-stretch-expanded whitespace-nowrap scale-[0.6] md:scale-[0.8] leading-[0.9] px-4">
+                    <h1 className="tracking-tight text-[#00B4D8] text-extrabold">
+                        Department of
+                    </h1>
+                    <h1 className="bg-gradient-to-r from-[#FF6FD8] via-[#6A11CB] to-[#00C9A7] text-transparent bg-clip-text flex text-4xl md:text-6xl lg:text-8xl flex-col font-thin font-sans items-center justify-center tracking-wider">
+                        <TypewriterEffectSmooth words={words} className={'text-2xl md:text-4xl lg:text-6xl font-extrabold scale-[1.1]'} />
+                    </h1>
+                    <h1 className="text-2xl md:text-3xl lg:text-5xl tracking-tighter">
+                        Maharaja Agrasen Institute of Technology, Delhi
+                    </h1>
+                </div>
+            </section>
 
             {/* Newsletter Section */}
-            <div className="h-screen w-full flex" >
-                <div className="absolute h-auto md:h-161 w-[95%] md:w-[90%] top-[5%] left-[50%] -translate-x-1/2 rounded-xl flex flex-col md:flex-row newsletter-card shadow-amber-400 inset-shadow-sm shadow-xl p-4 md:p-0" >
+            <section className="min-h-screen w-full flex items-center justify-center py-20">
+                <div className="h-auto md:h-161 w-[95%] md:w-[90%] rounded-xl flex flex-col md:flex-row newsletter-card shadow-amber-400 inset-shadow-sm shadow-xl p-4 md:p-0">
                     {/* Newsletter Text */}
-                    <div className="w-full md:w-[55%] md:absolute md:h-158.5 z-[2] md:right-[43%] mb-6 md:mb-0" >
-                        <div className="relative md:absolute top-[10%] md:top-[30%] scale-[1] md:scale-[1.5] left-0 md:left-[27.5%] card">
+                    <div className="w-full md:w-[55%] md:h-158.5 z-[2] mb-6 md:mb-0 flex items-center justify-center">
+                        <div className="scale-[1] md:scale-[1.5] card">
                             <span className="card__title">Newsletter</span>
                             <p className="card__content">
                                 Explore the latest advancements in AI and Machine Learning, featuring student projects, faculty research, and industry insights in our newest edition
@@ -119,11 +119,11 @@ export function Home({ className }) {
                     </div>
 
                     {/* Newsletter Image */}
-                    <div className="w-full md:w-[44.5%] md:absolute md:h-161 z-[2] bg-amber-50 md:left-[54.7%] rounded-[20px]" >
-                        <CardContainer className="relative md:absolute top-0 md:top-[8%] left-0 md:left-[12%] inter-var">
+                    <div className="w-full md:w-[43.5%] md:h-154 z-[2] bg-amber-50 rounded-[20px] flex items-center justify-center">
+                        <CardContainer className="inter-var">
                             <CardBody className="relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] w-full md:w-auto sm:w-[30rem] h-60 md:h-150 rounded-xl p-6">
                                 <CardItem translateZ="100" className="w-full mt-4">
-                                    <a href="https://www.mait.ac.in" className="cursor-pointer " target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.mait.ac.in" className="cursor-pointer" target="_blank" rel="noopener noreferrer">
                                         <img
                                             src="https://ik.imagekit.io/evkfzbhzw/newsletter.jpg?updatedAt=1754808643370"
                                             height="1000"
@@ -137,36 +137,40 @@ export function Home({ className }) {
                         </CardContainer>
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* Upcoming Events */}
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-mono font-semibold bg-gradient-to-r from-[#ff218c] via-[#ffd800] to-[#e121ff] object-contain text-transparent bg-clip-text absolute top-[220%] left-[50%] -translate-x-1/2 z-[2] text-center px-4">
-                Upcoming Events
-            </h1>
-            <div className="absolute top-[220%] h-full left-[50%] w-[95%] -translate-x-1/2" >
-                <Timeline data={timelineData} />
-            </div>
+            <section className="w-full py-20">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-mono font-semibold bg-gradient-to-r from-[#ff218c] via-[#ffd800] to-[#e121ff] object-contain text-transparent bg-clip-text text-center px-4 mb-16">
+                    Upcoming Events
+                </h1>
+                <div className="w-[95%] mx-auto">
+                    <Timeline data={timelineData} />
+                </div>
+            </section>
 
             {/* HOD Message Section */}
-            <div className="absolute top-[370%] overflow-hidden h-full w-[95%] md:w-[90%] left-[50%] -translate-x-1/2" >
-                <h1 className=" hidden relative top-[2%] font-sans text-transparent bg-clip-text bg-gradient-to-r from-[#bf0fff] to-[#cbff49] text-5xl lg:inline-block left-[6%] z-[2] font-semibold ">
-                    Hod's Message
-                </h1>
-                <div className="relative top-[8%]  md:left-[10%] flex flex-col lg:flex-row items-center lg:items-start" >
-                    <div className="w-full lg:w-auto mb-8 lg:mb-0">
-                        <HoverRevealCard
-                            imageUrl={hodMessage.imgUrl}
-                            title={hodMessage.title}
-                            description={hodMessage.description}
-                        />
-                    </div>
-                    <div className="hidden lg:block h-screen w-screen relative lg:-top-[80%] lg:left-[26%]" >
-                        <div className="relative h-full top-[13%]">
-                            <IsometricCubes />
+            <section className="w-full py-20">
+                <div className="w-[95%] md:w-[90%] mx-auto">
+                    <h1 className="hidden lg:block font-sans text-transparent bg-clip-text bg-gradient-to-r from-[#bf0fff] via-[#cbff49] to-[#cbff49] text-5xl md:inline-block font-semibold mb-12 text-center lg:text-left">
+                        Hod's Message
+                    </h1>
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+                        <div className="w-full lg:w-auto relative left-[8%]">
+                            <HoverRevealCard
+                                imageUrl={hodMessage.imgUrl}
+                                title={hodMessage.title}
+                                description={hodMessage.description}
+                            />
+                        </div>
+                        <div className="lg hidden lg:block flex-1 h-96">
+                            <div className="relative left-[50%] top-[35%] h-full w-full " >
+                                <IsometricCubes />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </>
+            </section>
+        </div>
     );
 }

@@ -219,7 +219,7 @@ export const TypewriterEffectSmooth = ({
                     cursorClassName
                 )}
                 style={{
-                    animation: 'blink 1.6s infinite'
+                    animation: 'blink 0.7s infinite'
                 }}>
             </span>
             <style jsx>{`

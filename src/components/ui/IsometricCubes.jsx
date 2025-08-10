@@ -40,7 +40,7 @@ const IsometricCubes = () => {
     const cubes = [
         { z: 20, t: 'translate(0px, 0px)' },
         { z: 10, t: 'translate(-60px, -60px)' },
-        { z: 30, t: 'translate(60px, 60px)' },
+        { z: 40, t: 'translate(60px, 60px)' },
     ];
 
     return (

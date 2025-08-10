@@ -64,9 +64,9 @@ export function Home({ className }) {
                             </form>
                         </div>
                     </div>
-                    
+
                     <div className=" absolute h-158.5 w-[40%] z-[2] bg-amber-50 left-[55%] rounded-3xl" >
-                        <CardContainer className=" absolute -top-[50%] inter-var">
+                        <CardContainer className=" absolute top-[1%] inter-var">
                             <CardBody className="  relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] w-auto sm:w-[30rem] h-150 rounded-xl p-6">
                                 <CardItem
                                     translateZ="50"
@@ -80,13 +80,15 @@ export function Home({ className }) {
                                 >
                                 </CardItem>
                                 <CardItem translateZ="100" className="w-full mt-4">
-                                    <img
-                                        src="https://ik.imagekit.io/evkfzbhzw/magazine_1_lSkeMNFz-O.jpg?updatedAt=1754725791864"
-                                        height="1000"
-                                        width="1000"
-                                        className="h-200 scale-[0.6] w-[170%] object-cover rounded-xl group-hover/card:shadow-xl"
-                                        alt="thumbnail"
-                                    />
+                                    <a href="https://www.mait.ac.in" className="cursor-pointer " target="_blank" >
+                                        <img
+                                            src="https://ik.imagekit.io/evkfzbhzw/newsletter.jpg?updatedAt=1754808643370"
+                                            height="1000"
+                                            width="1000"
+                                            className="h-130 object-cover rounded-xl group-hover/card:shadow-xl"
+                                            alt="thumbnail"
+                                        />
+                                    </a>
                                 </CardItem>
                             </CardBody>
                         </CardContainer>
